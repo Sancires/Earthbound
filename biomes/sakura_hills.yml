@@ -1,0 +1,40 @@
+id: "SAKURA_HILLS"
+vanilla: "minecraft:plains"
+
+colors:
+  foliage: 0xffc0cb
+  grass: 0x3eb489
+
+variables:
+  height: 24
+
+noise-equation: "-y + base + |terrain(x, y, z)| * height"
+
+palette:
+  - GRASS_VARIATION: 255
+
+flora:
+  - density: 40
+    items:
+      - GRASS: 5
+      - BLANK: 2
+      - TALL_GRASS: 1
+    y:
+      min: 62
+      max: 255
+  - density: 2
+    items:
+      - BLANK: 6
+      - PEONY: 2
+      - PINK_TULIP: 1
+    y:
+      min: 62
+      max: 255
+
+trees:
+  - density: 3
+    items:
+      CHERRY_BLOSSOM: 1
+    y:
+      min: 62
+      max: 255

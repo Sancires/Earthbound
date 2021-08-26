@@ -1,0 +1,26 @@
+id: "EARTHBOUND"
+version: "0.1.0-alpha"
+author: "Sancires"
+
+variables:
+  base: 63
+  equator: 0 # X coordinate.
+  prime_meridian: 0 # Z coordinate.
+
+noise:
+  terrain: # Noise used for terrain base.
+    type: "EXPRESSION"
+    equation: "simplex(x, y/2, z)"
+    dimensions: 3
+    functions:
+      simplex:
+        type: "FBM"
+        octaves: 4
+        dimensions: 3
+        function:
+          type: "OPENSIMPLEX2"
+          frequency: 0.005
+
+biomes:
+  biome: "SAKURA_HILLS"
+  type: "SINGLE"
