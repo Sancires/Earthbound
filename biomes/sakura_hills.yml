@@ -1,5 +1,5 @@
 id: "SAKURA_HILLS"
-vanilla: "minecraft:plains"
+vanilla: "minecraft:wooded_hills"
 
 colors:
   foliage: 0xffc0cb
