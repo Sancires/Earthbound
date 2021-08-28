@@ -1,0 +1,8 @@
+id: "OAK"
+
+scripts:
+  - "oak": 1
+
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"
