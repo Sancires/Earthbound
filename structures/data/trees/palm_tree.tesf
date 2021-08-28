@@ -1,11 +1,16 @@
 id "palm_tree";
 
-str blockID = getBlock(0,-1,0);
-if(blockID != "minecraft:grass_block" && blockID != "minecraft:sand" && blockID != "minecraft:coarse_dirt") {
-    fail; // Cancel gen if not in land.
+if (check(0,0,0) == "LAND") {
+    fail;
 }
 
-if(getBlock(0,0,0) != "minecraft:air") fail;
+str blockBelow = getBlock(0, -1, 0);
+if (blockBelow != "minecraft:grass_block" &&
+    blockBelow != "minecraft:podzol"      &&
+    blockBelow != "minecraft:dirt"        &&
+    blockBelow != "minecraft:coarse_dirt") {
+    fail;
+}
 
 num height = randomInt(5) + 7;
 
