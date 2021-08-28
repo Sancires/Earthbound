@@ -1,15 +1,23 @@
 id "cherry_blossom";
 
-str blockID = getBlock(0,-1,0);
-if(blockID != "minecraft:grass_block" && blockID != "minecraft:sand" && blockID != "minecraft:dirt") fail; // Cancel gen if not in land.
-blockID = getBlock(1,-1,0);
-if(blockID != "minecraft:grass_block" && blockID != "minecraft:sand" && blockID != "minecraft:dirt") fail; // Cancel gen if not in land.
-blockID = getBlock(0,-1,1);
-if(blockID != "minecraft:grass_block" && blockID != "minecraft:sand" && blockID != "minecraft:dirt") fail; // Cancel gen if not in land.
-blockID = getBlock(1,-1,1);
-if(blockID != "minecraft:grass_block" && blockID != "minecraft:sand" && blockID != "minecraft:dirt") fail; // Cancel gen if not in land.
+if (check(0,0,0) == "LAND") {
+    fail;
+}
 
-if(getBlock(0,0,0) != "minecraft:air") fail;
+str blockBelow = getBlock(0, -1, 0);
+if (blockBelow != "minecraft:grass_block" &&
+    blockBelow != "minecraft:podzol"      &&
+    blockBelow != "minecraft:dirt"        &&
+    blockBelow != "minecraft:coarse_dirt") {
+    fail;
+}
+
+num radius = 4;
+for(num px = -radius; px < radius; px = px + 1) {
+  for(num pz = -radius; pz < radius; pz = pz + 1) {
+    if(check(px,-1,pz) != "LAND") fail;
+  }
+}
 
 num height = randomInt(4) + 6;
 
