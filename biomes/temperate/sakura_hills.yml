@@ -37,7 +37,7 @@ flora:
 trees:
   - density: 3
     items:
-      CHERRY_BLOSSOM: 1
+      - CHERRY_BLOSSOM: 1
     y:
       min: 62
       max: 255
