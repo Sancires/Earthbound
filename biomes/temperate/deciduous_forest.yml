@@ -33,7 +33,7 @@ flora:
       max: 255
 
 trees:
-  - density: 3
+  - density: 6
     items:
       - OAK: 1
     y:
