@@ -1,4 +1,4 @@
-id "palm_tree";
+id "palm";
 
 if (check(0,0,0) == "LAND") {
     fail;
