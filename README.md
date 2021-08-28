@@ -9,7 +9,7 @@ Since release 1.7, Minecraft terrain generation has switched from generating mor
 
 - Ice caps that generate past a certain north/south radius.
 - Biome generation based on distance from equator and prime meridian.
-- Large continents seperated by distinct oceans with occassional smaller oceans.
+- Large continents seperated by distinct oceans with occassional smaller islands.
 
 ---
 
