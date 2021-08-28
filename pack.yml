@@ -22,5 +22,25 @@ noise:
           frequency: 0.005
 
 biomes:
-  biome: "SAKURA_HILLS"
-  type: "SINGLE"
+  type: "PIPELINE"
+# type: "SINGLE"
+# biome: "STEPPE"
+  resolution: 3
+  blend:
+    amplitude: 1.75
+    noise:
+      type: "OPENSIMPLEX2S"
+      frequency: 0.15
+  pipeline:
+    initial-size: 6
+    source:
+      type: "NOISE"
+      biomes:
+        - WATER: 1
+      noise:
+        type: "CONSTANT"
+    stages:
+      - mutate:
+          type: "SMOOTH"
+          noise:
+            type: "WHITENOISE"

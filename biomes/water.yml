@@ -1,0 +1,8 @@
+id: "WATER"
+vanilla: "minecraft:ocean"
+color: 0x0000ff
+
+noise-equation: "-y + base"
+
+palette:
+  - BEDROCK: 0

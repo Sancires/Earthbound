@@ -1,0 +1,8 @@
+id: "LAND"
+vanilla: "minecraft:plains"
+color: 0x00ff00
+
+noise-equation: "-y + base"
+
+palette:
+  - BEDROCK: 0
