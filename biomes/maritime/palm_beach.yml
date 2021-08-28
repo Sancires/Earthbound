@@ -1,0 +1,16 @@
+id: "PALM_BEACH"
+vanilla: "minecraft:beach"
+
+colors:
+  foliage: 0x3eb80f
+  grass: 0x64c73f
+
+noise-equation: "-y + base"
+
+trees:
+  - density: 1
+    items:
+      - PALM: 1
+    y:
+      min: 62
+      max: 255
