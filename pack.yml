@@ -40,6 +40,68 @@ biomes:
       noise:
         type: "CONSTANT"
     stages:
+      - mutate: # Distribute continents
+          type: "REPLACE"
+          from: "BIOME:WATER"
+          to:
+            - WATER: 4
+            - LAND: 4
+          noise:
+            type: "EXPRESSION"
+            equation: "continents(x, z)"
+            functions:
+              continents:
+                type: "DOMAINWARP"
+                amplitude: 25
+                warp:
+                  type: "FBM"
+                  function:
+                    type: "CELLULAR"
+                    distance: "Hybrid"
+                    frequency: 0.025
+                function:
+                  type: "FBM"
+                  octaves: 6
+                  function:
+                    type: "OPENSIMPLEX2S"
+                    frequency: 0.0025
+      - mutate: # Surround by water, so land does not reach ice caps.
+          type: "REPLACE"
+          from: "PROXY"
+          to:
+            - WATER: 2
+            - SELF: 1
+          noise:
+            type: "DOMAINWARP"
+            amplitude: 300
+            warp:
+              type: "DOMAINWARP"
+              amplitude: 35
+              warp:
+                type: "FBM"
+                function:
+                  type: "CELLULAR"
+                  distance: "Hybrid"
+                  frequency: 0.025
+              function:
+                type: "FBM"
+                octaves: 6
+                function:
+                  type: "OPENSIMPLEX2S"
+                  frequency: 0.0025
+            function:
+              type: "DOMAINWARP"
+              amplitude: 25
+              warp:
+                type: "FBM"
+                function:
+                  type: "OPENSIMPLEX2"
+              function:
+                type: "EXPRESSION"
+                equation: "(sqrt((z)*(z)+z*z) < h) * (sqrt((x)*(x)+x*x) < w)"
+                variables:
+                  h: 500
+                  w: 500
       - mutate:
           type: "SMOOTH"
           noise:

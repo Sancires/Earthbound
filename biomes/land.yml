@@ -4,5 +4,8 @@ color: 0x00ff00
 
 noise-equation: "-y + base"
 
+tags:
+  - "PROXY"
+
 palette:
   - BEDROCK: 0
