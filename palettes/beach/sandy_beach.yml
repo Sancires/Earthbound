@@ -1,0 +1,11 @@
+id: "SANDY_BEACH"
+
+layers:
+  - materials: "minecraft:sand"
+    layers: 1
+  - materials:
+      - "minecraft:dirt": 3
+      - "minecraft:clay": 3
+    layers: 2
+  - materials: "minecraft:stone"
+    layers: 1

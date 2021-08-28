@@ -14,3 +14,9 @@ trees:
     y:
       min: 62
       max: 255
+
+palette:
+  - BEDROCK: 0
+  - BEDROCK_HALF: 2
+  - DEEPSLATE: 20
+  - SANDY_BEACH: 255
