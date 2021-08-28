@@ -14,7 +14,7 @@ palette:
   - BEDROCK: 0
   - BEDROCK_HALF: 2
   - DEEPSLATE: 20
-  - GRASS_VARIATION: 255
+  - GRASS: 255
 
 flora:
   - density: 40
