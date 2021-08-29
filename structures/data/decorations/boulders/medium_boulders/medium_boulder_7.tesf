@@ -1,0 +1,40 @@
+id "medium_boulder_7";
+
+num y = 0;
+
+str blockBelow = getBlock(0, -1, 0);
+if (blockBelow != "minecraft:grass_block" &&
+    blockBelow != "minecraft:podzol"      &&
+    blockBelow != "minecraft:dirt"        &&
+    blockBelow != "minecraft:coarse_dirt") {
+    fail;
+}
+
+num radius = 6;
+for(num px = -radius; px < radius; px = px + 1) {
+  for(num pz = -radius; pz < radius; pz = pz + 1) {
+    if(check(px,-1,pz) != "LAND") fail;
+  }
+}
+
+block(0, y + 1, -2, "minecraft:andesite");
+block(0, y + 2, -2, "minecraft:stone_slab[type=bottom,waterlogged=false]");
+block(0, y + 1, -1, "minecraft:cobblestone");
+block(0, y + 2, -1, "minecraft:stone");
+block(0, y + 1, 0, "minecraft:andesite");
+block(0, y + 2, 0, "minecraft:cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]");
+block(1, y + 1, -2, "minecraft:andesite");
+block(1, y + 2, -2, "minecraft:stone");
+block(1, y + 1, -1, "minecraft:cobblestone");
+block(1, y + 2, -1, "minecraft:stone");
+block(1, y + 3, -1, "minecraft:stone");
+block(1, y + 1, 0, "minecraft:stone");
+block(1, y + 2, 0, "minecraft:stone");
+block(1, y + 3, 0, "minecraft:andesite_slab[type=bottom,waterlogged=false]");
+block(2, y + 1, -2, "minecraft:stone");
+block(2, y + 2, -2, "minecraft:andesite");
+block(2, y + 1, -1, "minecraft:andesite");
+block(2, y + 2, -1, "minecraft:andesite");
+block(2, y + 3, -1, "minecraft:andesite_slab[type=bottom,waterlogged=false]");
+block(2, y + 1, 0, "minecraft:stone");
+block(2, y + 2, 0, "minecraft:cobblestone");

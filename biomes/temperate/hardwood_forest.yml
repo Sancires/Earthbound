@@ -45,6 +45,12 @@ trees:
     y:
       min: 62
       max: 255
+  - density: 0.5
+    items:
+      - MEDIUM_BOULDER: 1
+    y:
+      min: 36
+      max: 255
   - density: 0.625
     items:
       - FOREST_FLOWER_PATCH: 1
