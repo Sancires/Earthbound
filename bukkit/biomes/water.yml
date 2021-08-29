@@ -1,0 +1,11 @@
+id: "WATER"
+vanilla: "minecraft:ocean"
+color: 0x0000ff
+
+noise-equation: "-y + base"
+
+tags:
+  - "PROXY"
+
+palette:
+  - BEDROCK: 255

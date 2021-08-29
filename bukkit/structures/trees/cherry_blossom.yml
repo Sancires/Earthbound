@@ -1,0 +1,8 @@
+id: "CHERRY_BLOSSOM"
+
+scripts:
+  - "cherry_blossom": 1
+
+spawnable:
+  - "minecraft:grass_block"
+  - "minecraft:podzol"

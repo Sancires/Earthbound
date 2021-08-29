@@ -1,0 +1,8 @@
+id: "STEPPE_SHRUBS"
+
+scripts:
+  - "oak_shrub": 1
+  - "spruce_shrub": 1
+
+spawnable:
+  - "minecraft:grass_block"

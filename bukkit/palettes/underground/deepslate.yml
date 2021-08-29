@@ -1,0 +1,17 @@
+id: "DEEPSLATE"
+
+layers:
+  - materials:
+      - "minecraft:stone": 1
+      - "minecraft:deepslate": 6
+    layers: 1
+
+noise:
+  type: "EXPRESSION"
+  dimensions: 3
+  equation: "((simplex(x, y, z)+1) * max((-y+20)/20,0))-1"
+  functions:
+    simplex:
+      dimensions: 3
+      frequency: 0.05
+      type: "OPENSIMPLEX2"

@@ -1,0 +1,9 @@
+id: "BLANK"
+
+layers:
+  - materials:
+      - "minecraft:air": 1
+    layers: 1
+
+spawnable: []
+replaceable: []

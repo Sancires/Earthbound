@@ -1,0 +1,9 @@
+id: "FOREST_FLOWER_PATCH"
+
+scripts:
+  - "dandelion_patch": 10
+  - "azure_bluet_patch": 5
+  - "cornflower_patch": 1
+
+spawnable:
+  - "minecraft:grass_block"
