@@ -22,9 +22,9 @@ noise:
           frequency: 0.005
 
 biomes:
-  type: "PIPELINE"
-# type: "SINGLE"
-# biome: "STEPPE"
+#  type: "PIPELINE"
+  type: "SINGLE"
+  biome: "HARDWOOD_FOREST"
   resolution: 3
   blend:
     amplitude: 1.75
