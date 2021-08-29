@@ -1,5 +1,0 @@
-id: "BEDROCK"
-
-layers:
-  - materials: "minecraft:bedrock"
-    layers: 1
