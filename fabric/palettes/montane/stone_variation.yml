@@ -1,8 +1,0 @@
-id: "STONE_VARIATION"
-
-layers:
-  - materials:
-      - "minecraft:cobblestone": 4
-      - "minecraft:andesite": 5
-      - "minecraft:stone": 8
-    layers: 1

@@ -31,7 +31,7 @@ noise:
 biomes:
 #  type: "PIPELINE"
   type: "SINGLE"
-  biome: "STONE_MOUNTAINS"
+  biome: "HARDWOOD_FOREST"
   resolution: 3
   blend:
     amplitude: 1.75
