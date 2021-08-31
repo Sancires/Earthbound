@@ -8,13 +8,6 @@ variables:
   prime_meridian: 0 # Z coordinate.
 
 noise:
-  manhattan: # Used for adding "peakiness" to mountains.
-    type: "FBM"
-    function:
-      type: "CELLULAR"
-      distance: "Manhattan"
-      return: "CellValue"
-      frequency: 0.0025
   terrain: # Noise used for terrain base.
     type: "EXPRESSION"
     equation: "simplex(x, y/2, z)"
