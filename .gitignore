@@ -13,6 +13,6 @@
 .vscode/
 
 # Tools
-fabric/BiomeTool.jar
+BiomeTool.jar
 
 *.zip
